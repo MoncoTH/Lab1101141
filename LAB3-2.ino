@@ -28,14 +28,14 @@ void loop()
     Serial.println(distance);
     delay(1000);
 
-    if (distance > 120)
+    if (distance > 12)
     {
         for (i = 5; i <= 11; i++)
         {
             digitalWrite(i, LOW);
         }
     }
-    if (distance > 110 && distance <= 120)
+    if (distance > 11 && distance <= 12)
     {
         digitalWrite(5, HIGH);
         for (i = 6; i <= 11; i++)
@@ -43,7 +43,7 @@ void loop()
             digitalWrite(i, LOW);
         }
     }
-    if (distance > 100 && distance <= 110)
+    if (distance > 10 && distance <= 11)
     {
         for (i = 5; i <= 6; i++)
         {
@@ -54,7 +54,7 @@ void loop()
             digitalWrite(i, LOW);
         }
     }
-    if (distance > 90 && distance <= 100)
+    if (distance > 9 && distance <= 10)
     {
         for (i = 5; i <= 7; i++)
         {
@@ -65,7 +65,7 @@ void loop()
             digitalWrite(i, LOW);
         }
     }
-    if (distance > 80 && distance <= 90)
+    if (distance > 8 && distance <= 9)
     {
         for (i = 5; i <= 8; i++)
         {
@@ -76,7 +76,7 @@ void loop()
             digitalWrite(i, LOW);
         }
     }
-    if (distance > 70 && distance <= 80)
+    if (distance > 7 && distance <= 8)
     {
         for (i = 5; i <= 9; i++)
         {
@@ -87,7 +87,7 @@ void loop()
             digitalWrite(i, LOW);
         }
     }
-    if (distance > 60 && distance <= 70)
+    if (distance > 6 && distance <= 7)
     {
         for (i = 5; i <= 10; i++)
         {
@@ -95,7 +95,7 @@ void loop()
         }
         digitalWrite(11, LOW);
     }
-    if (distance > 0 && distance <= 60)
+    if (distance > 0 && distance <= 6)
     {
         for (i = 5; i <= 11; i++)
         {
